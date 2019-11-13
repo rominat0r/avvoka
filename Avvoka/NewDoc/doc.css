@@ -1,0 +1,204 @@
+#editor-container {
+  height: 1200px;
+  background-color: rgb(236, 236, 236);
+}
+#header{
+  position: relative;
+  height: 50px;
+}
+h1{
+   
+    color: rgb(56, 12, 216);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#docsave{
+  display: none;
+  position: fixed;
+  left : 47%;
+  bottom: 100px ;
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 25px;
+  background: rgb(35, 83, 187);
+  padding: 7px;
+}
+#undobutton{
+  background-color: white;
+  color: black;
+  width: 50px;
+  border: none;
+}
+#redobutton{
+  background-color: white;
+  color: black;
+  width: 50px;
+  border: none;
+}
+#open_button{
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.9); /* Black w/ opacity */
+}
+input {
+  width: 100%;
+  outline: none;
+  font-size: .9em;
+  color: #281094;
+  margin: 0.3em 0 1em 0;
+  border: none;
+  background: none;
+  border-bottom: 3px solid rgb(21, 18, 184);
+  padding: 0.5em 0.1em;
+  transition: all 0.5s ease;
+}
+input :focus {
+  outline: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+/* Modal Content */
+.modal-content {
+  background-color: #525350;
+  margin: auto;
+  font-size: 25px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#docname{
+  color: white;
+  border-bottom: 3px solid rgb(255, 255, 255);
+
+}
+#create{
+    
+  background-color: rgb(255, 255, 255); /* Green */
+  border: none;
+  color: rgb(35, 12, 245);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+#counter {
+  position: fixed;
+ 
+  color: rgb(0, 0, 0);
+  top:auto;
+  bottom:0px;
+  width: 100%;
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+}
+
+#toolbar-container{
+  position: fixed;
+  top: 0px;
+  bottom:auto;
+  width: 100%;
+  background-color: white;
+  height: 45px;
+  left: 0px;
+  z-index: 1;
+}
+#mytoolbar .ql-font span[data-label="Aref Ruqaa"]::before {
+  font-family: "Aref Ruqaa";
+}
+#mytoolbar .ql-font span[data-label="Mirza"]::before {
+  font-family: "Mirza";
+}
+#mytoolbar .ql-font span[data-label="Roboto"]::before {
+  font-family: "Roboto";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(35, 99, 216);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#MyDocs{
+  color: white;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  
+  width: 100%;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#user_hello{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  
+  width: 100%;
+  color: white;
+  display: block;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Set content font-families */
+.ql-font-mirza {
+  font-family: "Mirza";
+}
+.ql-font-roboto {
+  font-family: "Roboto";
+}
